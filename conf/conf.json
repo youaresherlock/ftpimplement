@@ -1,17 +1,33 @@
-{
-"redis": {
-        "host": "10.65.20.235",
-        "db": 0,
-        "pwd": "785a9c2b48cc9503d80bd686268bcd9d",
-        "port": 6379
-    },
-  "processManager":{
-      "num": 30
-  },
-  "threadManager":{
-      "num":30
-  },
-  "cache":"redisCache",
-  "cache_class":"RedisCache",
-  "comm_request_queue":"rpcRequestQueue"
-}
+# tfppractice download
+# The number of milliseconds of each tick
+# Zookeeper服务心跳检测时间，单位为ms
+tickTime=2000
+# The number of ticks that the initial 
+# synchronization phase can take
+# 投票选举新leader的初始化时间 
+initLimit=10
+# The number of ticks that can pass between 
+# sending a request and getting an acknowledgement
+syncLimit=5
+# the directory where the snapshot is stored.
+# do not use /tmp for storage, /tmp here is just 
+# example sakes.
+# 数据存储位置
+dataDir=/home/ubuntu/Clarence/zookeeper/zookeeperClarence
+# the port at which the clients will connect
+# 设置客户端的端口号
+clientPort=2181
+# the maximum number of client connections.
+# increase this if you need to handle more clients
+#maxClientCnxns=60
+#
+# Be sure to read the maintenance section of the 
+# administrator guide before turning on autopurge.
+#
+# http://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_maintenance
+#
+# The number of snapshots to retain in dataDir
+#autopurge.snapRetainCount=3
+# Purge task interval in hours
+# Set to "0" to disable auto purge feature
+#autopurge.purgeInterval=1

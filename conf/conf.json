@@ -1,0 +1,17 @@
+{
+"redis": {
+        "host": "10.65.20.235",
+        "db": 0,
+        "pwd": "785a9c2b48cc9503d80bd686268bcd9d",
+        "port": 6379
+    },
+  "processManager":{
+      "num": 30
+  },
+  "threadManager":{
+      "num":30
+  },
+  "cache":"redisCache",
+  "cache_class":"RedisCache",
+  "comm_request_queue":"rpcRequestQueue"
+}
